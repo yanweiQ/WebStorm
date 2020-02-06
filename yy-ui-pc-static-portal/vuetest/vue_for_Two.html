@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vuejs-2.5.16.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul v-for="(value,key) in user">
+            <li>{{value}}{{key}}</li>
+        </ul>
+    </div>
+</body>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                user:{
+                    name:"kgc",
+                    age:25
+                }
+            }
+        })
+    </script>
+</html>
